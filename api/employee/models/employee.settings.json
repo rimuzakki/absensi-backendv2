@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employees",
+  "info": {
+    "name": "Employee"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nik": {
+      "type": "string"
+    },
+    "fullname": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "sex": {
+      "type": "string"
+    },
+    "birth_date": {
+      "type": "date"
+    },
+    "presences": {
+      "via": "employee",
+      "collection": "presence"
+    },
+    "division": {
+      "via": "employees",
+      "model": "division"
+    }
+  }
+}

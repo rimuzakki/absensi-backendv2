@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "presences",
+  "info": {
+    "name": "Presence"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "id_presence": {
+      "type": "string"
+    },
+    "presence_date": {
+      "type": "date"
+    },
+    "time_in": {
+      "type": "time"
+    },
+    "time_out": {
+      "type": "time"
+    },
+    "minutes_late": {
+      "type": "integer"
+    },
+    "employee": {
+      "model": "employee",
+      "via": "presences"
+    }
+  }
+}

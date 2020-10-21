@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "divisions",
+  "info": {
+    "name": "Division"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "division_name": {
+      "type": "string"
+    },
+    "work_hours": {
+      "type": "component",
+      "repeatable": false,
+      "component": "hours.hours-of-operation"
+    },
+    "employees": {
+      "collection": "employee",
+      "via": "division"
+    }
+  }
+}

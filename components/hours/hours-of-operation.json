@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_hours_hours_of_operations",
+  "info": {
+    "name": "Hours_of_operation",
+    "icon": "clock"
+  },
+  "options": {},
+  "attributes": {
+    "work_type": {
+      "type": "string"
+    },
+    "starting_hours": {
+      "type": "string"
+    },
+    "finish_hours": {
+      "type": "string"
+    },
+    "total_hours": {
+      "type": "integer"
+    }
+  }
+}
